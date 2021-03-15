@@ -1,0 +1,31 @@
+@model ItemServico
+
+<form method="POST">
+    <h2>Pré-Agendamento</h2>
+   <p>
+       <label asp-for="nome">Nome:</label>
+       <input asp-for="nome"/>
+   </p>
+   <p>
+       <label asp-for="telefone">Telefone:</label>
+       <input asp-for="telefone"/>
+   </p>
+   <p>
+       <label asp-for="data">Data:</label>
+       <input type="date" asp-for="data"/>
+   </p>
+    <p>
+       <label asp-for="animal">Animal:</label>
+       <select asp-for="animal">
+           <option value="Cachorro">Cachorro</option>
+           <option value="Gato">Gato</option>
+           <option value="Pássaro">Pássaro</option>
+           <option value="Peixe">Peixe</option>
+       </select>
+   </p>
+   <p>
+       <label asp-for="necessidade">Necessidade:</label>
+       <input type="text" asp-for="necessidade"/>
+   </p>
+   <input type="submit" value="enviar" />
+</form>

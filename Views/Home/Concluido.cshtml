@@ -1,0 +1,25 @@
+@model ItemServico
+
+<h2>Servico agendado com sucesso!</h2>
+
+<h2>Listagem dos Produtos</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome:</th>
+            <th>Animal:</th>
+            <th>Serviço:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@ViewBag.nome</td>
+            <td>@ViewBag.animal</td>
+            <td>@ViewBag.necessidade</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<p><a asp-action="Agendamento">Agendar novo servico</a></p>
